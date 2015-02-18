@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Contenido Plugin and Extension API (PEA)</title>
+		<style>
+			BODY, HEADER, FOOTER, ARTICLE {
+				font-family		: "Arial", "Helvetica", "sans-serif";
+				font-size		: 12pt;
+				display			: block;
+				width			: 100%;
+				height			: 100%;
+				overflow		: hidden;
+				color			: #454545;
+				background-color: #eeeeee;
+			}
+			HEADER, FOOTER, ARTICLE {
+				position		: absolute;
+				top				: 0px;				
+				left			: 0px;				
+				right			: 0px;				
+				height			: 40px;
+				width			: auto;				
+				border 			: 0px dashed #454545;
+				padding			: 5px;
+			}		
+			HEADER {
+				font-size		: 13pt;
+				font-weight		: bold;			
+			}		
+			HEADER H1 {
+				margin			: 0px;				
+				padding-left	: 20px;				
+				float			: left;
+				color			: blue;
+			}
+			FOOTER {
+				font-size		: 8pt;				
+				top				: auto;
+				bottom			: 0px;				
+				height			: 25px;		
+			}
+			FOOTER UL {
+				margin			: 0px;				
+				margin			: 5px;	
+				padding			: 0px;
+				float			: right;	
+				list-style-type	: square;			
+			}
+			FOOTER LI {
+				float			: left;
+				margin-left		: 25px;				
+			}			
+			FOOTER LI:first-child {
+				display			: inline-block;
+				margin-left		: 0px;				
+			}			
+			ARTICLE {
+				top				: 50px;
+				bottom			: 35px;	
+				height			: auto;			
+				overflow-y		: auto;				
+				border-top 		: 1px dashed #454545;				
+				border-bottom 	: 1px dotted #454545;				
+			}
+			SECTION { padding-left : 15px; }
+			A:visited { color: blue; }
+			.logo { float: left; border: none; }			
+			HEADER H1 + .logo { float: right; padding: 5px; }			
+			.spacer { visibility : hidden; }			
+			.hide { display: none; visibility : hidden; }			
+		</style>
+	</head>
+	<body>
+		<header>
+			<img class="logo" src="http://images.dragon-projects.de/repository/dp.net/dragon-projects.net.logo.transparent.72dpi.169x41.png" alt="[dragon-projects.net]" />
+			<h1>Contenido Plugin and Extension API (PEA)</h1>
+			<img class="logo" src="http://www.contenido.org/de/images/contenido_logo.gif" alt="contenido.org - 4fb" />
+		</header>
+		 
+		<article>
+			<p>Welcome to &quot;Contenido Plugin and Extension API&quot; (PEA)...</p>
+			<p>Contenido PEA is a set of extensions to the content management system 'CONTENIDO' grouped into the main topics:</p>
+			<ul>
+				<li>
+					<a href="#framework">Contenido Plugin and Extension API (PEA) Framework</a>
+					<p>a set of classes, functions and scripts for easier and standarized plugin and module development</p>
+				</li>
+				<li>
+					<a href="#admin">Contenido Plugin and Extension API (PEA) Admin</a>
+					<p>a set of classes, functions and standarized applications for plugin and module administration and management</p>
+				</li>
+			</ul>
+			
+			<hr />
+			
+			<section>
+				<h2><a name="framework">Contenido Plugin and Extension API (PEA) Framework</a></h2>
+				<ul>
+					<li><a href="#framework_module_extensions">Module Extensions</a></li>
+					<li><a href="#framework_plugin_extensions">Plugin Extensions</a></li>
+					<li class="spacer"><!-- spacer --></li>
+					<li><a href="#framework_frontenduser_extensions">Frontenduser Extensions</a></li>
+					<li class="spacer"><!-- spacer --></li>
+					<li><a href="#framework_data_extensions">Data Extensions</a></li>
+					<li class="spacer"><!-- spacer --></li>
+					<li><a href="#framework_other_extensions">other Frontend/Backend Extensions</a></li>
+					<li class="spacer"><!-- spacer --></li>
+					<li><a href="#framework_api_docs">Framework API Reference</a></li>
+				</ul>
+				<section>
+					<h3><a name="framework_module_extensions">Module Extensions</a></h3>
+					<ul>
+						<li>Module Conventions</li>
+						<li class="spacer"><!-- spacer --></li>
+						<li>Module Input Extensions</li>
+						<li>Module Output Extensions</li>
+						<li class="spacer"><!-- spacer --></li>
+					</ul>
+				</section>
+				<section>
+					<h3><a name="framework_plugin_extensions">Plugin Extensions</a></h3>
+					<ul>
+						<li>Plugin Conventions</li>
+						<li class="spacer"><!-- spacer --></li>
+						<li>Plugin Routing</li>
+						<li>Plugin Configuration Extensions</li>
+						<li>Plugin GUI Extensions</li>
+						<li>Plugin Processing Extensions</li>
+						<li class="spacer"><!-- spacer --></li>
+					</ul>
+				</section>
+				<section>
+					<h3><a name="framework_frontenduser_extensions">Frontenduser Extensions</a></h3>
+					<ul>
+						<li class="spacer"><!-- spacer --></li>
+					</ul>
+				</section>
+				<section>
+					<h3><a name="framework_data_extensions">Data Extensions</a></h3>
+					<ul>
+						<li class="spacer"><!-- spacer --></li>
+					</ul>
+				</section>
+				<section>
+					<h3><a name="framework_other_extensions">other Frontend/Backend Extensions</a></h3>
+					<ul>
+						<li>Template Extensions</li>
+					</ul>
+				</section>
+				<section>
+					<h3><a name="framework_api_docs">Framework API Reference</a></h3>
+					<ul>
+						<li><a href="api/html/" target="_blank">reference/source-code documentation</a></li>
+					</ul>
+				</section>
+			</section>
+			
+			<hr />
+			
+			<section>
+				<h2><a name="admin">Contenido Plugin and Extension API (PEA) Admin</a></h2>
+				<ul>
+					<li>Introduction</li>
+					<li class="spacer"><!-- spacer --></li>
+					<li>Interface</li>
+					<li>Extensions</li>
+					<li class="spacer"><!-- spacer --></li>
+					<li>CRON jobs</li>
+				</ul>
+			</section>
+		</article>
+		
+		<footer>
+			<ul>
+				<li>last update: 2013.03.03</li>
+				<li>&copy; [dragon-projects.net]</li>
+				<li><a href="mailto:contenido@dragon-projects.net" target="_blank" title="send a message">contenido@dragon-projects.net</a></li>
+				<li><a href="http://contenido.dragon-projects.net" target="_blank" title="to [dragon-projects.net] Contenido project page">http://contenido.dragon-projects.net</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
